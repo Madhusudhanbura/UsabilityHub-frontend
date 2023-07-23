@@ -53,6 +53,7 @@ a{
     max-width: 1180px;
     margin-inline: auto;
     padding-inline: var(--padding-inline-section);
+    overflow: hidden; 
 }
 
 .flex{
@@ -81,6 +82,7 @@ ul{
     padding: 10px 20px;
     box-shadow: 0 0 2px var(--secondary-text-color);
     transition: 0.2s ease-out;
+    text-align: center;
 }
 .prim-btn:hover{
     background-color: var(--accent-color-dark);
@@ -123,6 +125,7 @@ ul{
 .main-nav{
     margin-top: 20px;
     justify-content: space-between;
+    position: relative;
 }
 
 .nav-logo img{
@@ -138,6 +141,9 @@ ul{
     gap: 40px;
 }
 
+.nav-toggle{
+    display: none;
+}
 
 
 /* header section */
@@ -163,7 +169,7 @@ header{
 }
 
 .header-right img{
-    width: 580px;
+    width: 100%;
 }
 
 
@@ -176,8 +182,9 @@ header{
 }
 
 .logos{
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .logo{
@@ -215,6 +222,10 @@ header{
     gap: 40px;
 }
 
+.features-card img{
+    width: 60px;
+}
+
 .features-card{
     flex-direction: column;
     gap: 20px;
@@ -225,7 +236,7 @@ header{
 
 
 /* big-feature-section */
-.big-feature-section-1{
+#big-feature-section-1{
     padding: 120px var(--padding-inline-section) 0;
 }
 
@@ -246,7 +257,7 @@ header{
 
 /* examples-section */
 .examples-section{
-    margin-top: 80px;
+    padding: 80px var(--padding-inline-section) 0;
 }
 
 .examples-header{
@@ -258,6 +269,7 @@ header{
 .examples-area{
     justify-content: space-between;
     margin-block: 30px;
+    flex-wrap: wrap;
 }
 
 .examples-card:hover {
@@ -267,7 +279,7 @@ header{
 .examples-card{
     width: 24%;
     position: relative;
-    min-height: 350px;
+    height: 350px;
     background: black;
     background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(./assets/asset\ 36.jpeg);
     background-size: cover;
@@ -302,26 +314,33 @@ header{
 /* cta-section */
 .cta-section{
     background-color: #183B54;
-    height: 600px;
-    padding-top: 20px;
+    padding-top: 80px;
 }
 
 .cta-sec-container{
     color: white;
 }
 
+.cta-left{
+    width: 78vw;
+}
 
 .cta-left li{
     text-align: start;
     margin-bottom: 10px;
 }
 
+
 .cta-left ul{
-    list-style-type:disc;
+    list-style: disc ;
     column-count: 2;
     justify-content: self-start;
+    color: #b9cde4;
+}
 
-    /* flex-wrap: wrap; */
+.cta-left ul li a{
+    color: #b9cde4;
+    border-bottom: 1px dashed #b9cde4;
 }
 
 .cta-left h3{
@@ -348,7 +367,7 @@ header{
 }
 
 .cta-right img{
-    width: 600px;
+    width: 100%;
 }
 
 
@@ -388,4 +407,10 @@ footer{
 .subf-container{
     justify-content: center;
     gap:20px;
+    flex-wrap: wrap;
 }
+
+
+
+
+

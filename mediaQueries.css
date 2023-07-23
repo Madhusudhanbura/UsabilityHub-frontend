@@ -1,0 +1,154 @@
+/* Media Queries  for responsiveness*/
+@media screen and (max-width : 991px) {
+    .nav-toggle{
+        display: block;
+        margin-left: 20px;
+    }
+
+    .main-nav{
+        overflow: initial;
+    }
+
+    .nav-links ul{
+        flex-direction: column;
+    }
+
+    .nav-links{
+        position: absolute;
+        background-color: white;
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        padding-block: 20px;
+        transition: 0.2sec ease-in-out;
+    }
+
+    .nav-links.active{
+        left: 0;
+    }
+
+    .examples-area{
+        gap: 20px;
+    }
+
+    .examples-card{
+        width: calc(50% - 10px);
+        height: 180px;
+    }
+
+    h3{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .header-sec{
+        flex-direction: column-reverse;
+    }
+
+    .header-left{
+        max-width: 100vw;
+        text-align: center;
+    }
+
+    .prim-btn{
+        width: 100%;
+    }
+
+    .features-area{
+        justify-content: space-around;
+    }
+
+    .features-card{
+        min-width: calc(50%-10px);
+    }
+
+    .cta-sec-container{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+
+    .cta-btn{
+        flex-direction: column;
+        /* justify-content: ; */
+    }
+
+    .features-section{
+        background-size: 0;
+    }
+
+    .big-feature-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features-desc{
+        align-items: stretch;
+    }
+
+    #big-feature-container-2{
+        flex-direction: column-reverse;
+        margin-block: 60px;
+    }
+
+    .examples-section{
+        text-align: center;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .link-column{
+        align-items: stretch;
+    }
+
+    .cta-left ul li{
+        text-align: center;
+        list-style: none;
+    }
+
+    .cta-left ul{
+        column-count: 1;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    :root{
+        --padding-inline-section: 10px;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .features-card{
+        min-width: 100%;
+    }
+
+    .examples-card{
+        width: 100%;
+    }
+
+    .cta-sec-container{
+        text-align: center;
+    }
+
+    .cta-left ul{
+        column-count: 1;
+    }
+}

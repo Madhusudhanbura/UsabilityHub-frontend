@@ -7,6 +7,7 @@
 
     <!--Link CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
@@ -18,12 +19,13 @@
         </div>
     </div>
 
+    <!-- Navbar -->
     <nav>
         <div class="container main-nav flex">
             <a href="#" class="nav-logo">
                 <img src="./assets/asset 1.png" alt="company logo">
             </a>
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
                 <ul class="flex">
                     <li><a href="#" class="hover-link">Products</a></li>
                     <li><a href="#" class="hover-link">Customers</a></li>
@@ -33,10 +35,13 @@
                     <li><a href="#" class="hover-link prim-btn">Sign up</a></li>
                 </ul>
             </div>
-            
+            <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
         </div>
     </nav>
 
+    <!-- Header -->
     <header>
         <div class="container header-sec flex">
             <div class="header-left">
@@ -50,6 +55,7 @@
         </div>
     </header>
 
+    <!-- Companies section -->
     <section class="companies-section">
         <div class="container">
             <div class="small-bold-text companies-header">The world’s best companies rely on UsabilityHub to make better design decisions.</div>
@@ -66,6 +72,7 @@
         </div>
     </section>
 
+    <!-- Features section -->
     <section class="features-section">
         <div class="container">
             <div class="features-header">
@@ -74,37 +81,37 @@
             </div>
             <div class="features-area flex">
                 <div class="features-card flex">
-                    <img class="logo" src="assets/pile.svg" alt="">
+                    <img src="assets/pile.svg" alt="">
                     <h3>Card sorting.</h3>
                     <p>Discover how people group and label information.</p>
                     <a href="#" class="sec-btn">Learn more <i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
                 <div class="features-card flex">
-                    <img class="logo" src="assets/signroad.svg" alt="">
+                    <img src="assets/signroad.svg" alt="">
                     <h3>Prototype tests</h3>
                     <p>Discover how people navigate your Figma prototypes.</p>
                     <a href="#" class="sec-btn">Learn more <i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
                 <div class="features-card flex">
-                    <img class="logo" src="assets/arrow.svg" alt="">
+                    <img src="assets/arrow.svg" alt="">
                     <h3>First click tests</h3>
                     <p>Test interaction with first click and navigation tests.</p>
                     <a href="#" class="sec-btn">Learn more <i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
                 <div class="features-card flex">
-                    <img class="logo" src="assets/qsmark.svg" alt="">
+                    <img src="assets/qsmark.svg" alt="">
                     <h3>Design surveys</h3>
                     <p>Get feedback on images, videos or audio files.</p>
                     <a href="#" class="sec-btn">Learn more <i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
                 <div class="features-card flex">
-                    <img class="logo" src="assets/love.svg" alt="">
+                    <img src="assets/love.svg" alt="">
                     <h3>Preference tests</h3>
                     <p>Find out which designs users prefer and why.<p>
                     <a href="#" class="sec-btn">Learn more <i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
                 <div class="features-card flex">
-                    <img class="logo" src="assets/sandtime.svg" alt="">
+                    <img src="assets/sandtime.svg" alt="">
                     <h3>Five second tests</h3>
                     <p>Test comprehensibility by measuring first impressions.</p>
                     <a href="#" class="sec-btn">Learn more <i class="fa-solid fa-arrow-right-long"></i></a>
@@ -114,7 +121,9 @@
         </div>
     </section>
 
-    <section class="big-feature-section-1">
+<!-- Big feature section -->
+    <!-- Big feature sec1 -->
+    <section class="big-feature-section" id="big-feature-section-1">
         <div class="container flex big-feature-container">
             <div class="feature-img">
                 <img src="./assets/asset 18.png" alt="img">
@@ -126,8 +135,9 @@
             </div>
         </div>
     </section>
+    <!-- Big feature sec2 -->
     <section class="big-feature-section">
-        <div class="container flex big-feature-container">
+        <div class="container flex big-feature-container" id="big-feature-container-2">
             <div class="features-desc flex">
                 <h4>Optimisation for</h4>
                 <h3>Marketers</h3>
@@ -138,6 +148,7 @@
             </div>
         </div>
     </section>
+    <!-- Big feature sec3 -->
     <section class="big-feature-section">
         <div class="container flex big-feature-container">
             <div class="feature-img">
@@ -152,6 +163,7 @@
         </div>
     </section>
 
+    <!-- Examples section -->
     <section class="examples-section">
         <div class="container">    
             <div class="examples-header flex">
@@ -175,6 +187,7 @@
         </div>
     </section>
 
+    <!-- CTA section -->
     <section class="cta-section">
         <div class="container cta-sec-container flex">
             <div class="cta-left">
@@ -196,11 +209,12 @@
                 </div>
             </div>
             <div class="cta-right">
-                <img src="./assets/asset 40.png" alt="imageOfUSD1">
+                <img src="assets/asset 40.png" alt="imageOfUSD1">
             </div>
         </div>
     </section>
 
+    <!-- Test section -->
     <section class="test-section">
         <div class="container flex test-container">
             <h2>Start testing today</h2>
@@ -209,6 +223,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container flex footer-container">
             <div>
@@ -249,6 +264,7 @@
         </div>
     </footer>
 
+    <!-- Sub Footer -->
     <div class="sub-footer">
         <div class="container flex subf-container">
             <a href="#" class="hover-link">Privacy policy</a>
@@ -261,5 +277,14 @@
         </div>
     </div>
     
+    <script>
+        const toggleButton = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggleButton.addEventListener('click',()=>{
+            navLinks.classList.toggle('active');
+        })
+        
+    </script>
 </body>
 </html>
